@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Aug 30 16:54:49 IST 2018</td>
+<td>Started on:</td><td>Fri Aug 31 15:36:59 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>117 seconds (117411 ms)</td>
+<tr><td>Total time:</td><td>69 seconds (69495 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,13 +75,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Hebeon.QALogin.Course()'><b>Course</b><br>Test class: Hebeon.QALogin</td>
-<td><div><pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;span id=&quot;btnGo&quot; class=&quot;btn btn-danger btn-go&quot;&gt; could not be scrolled into view
+<td title='Screenshot.SampleTest.login()'><b>login</b><br>Test class: Screenshot.SampleTest<br>Parameters: shalini, medha</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@id=&apos;ContentPlaceHolder1_btnLogin&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:32:14.902Z&apos;
 System info: host: &apos;DELL-PC&apos;, ip: &apos;192.168.1.105&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_181&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3392, moz:profile: C:\Users\dell\AppData\Local..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: f3b5ea7e-f89f-4a64-92fc-af5cd98aac40
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3508, moz:profile: C:\Users\dell\AppData\Local..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: ebe9d1a1-026d-4648-941c-41ea30eed3f6
+*** Element info: {Using=xpath, value=//input[@id=&apos;ContentPlaceHolder1_btnLogin&apos;]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -92,9 +94,11 @@ Session ID: f3b5ea7e-f89f-4a64-92fc-af5cd98aac40
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at Hebeon.QALogin.Course(QALogin.java:45)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at Screenshot.SampleTest.login(SampleTest.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -120,13 +124,15 @@ Session ID: f3b5ea7e-f89f-4a64-92fc-af5cd98aac40
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1089930529", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1089930529'><pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;span id=&quot;btnGo&quot; class=&quot;btn btn-danger btn-go&quot;&gt; could not be scrolled into view
+</pre></div><a href='#' onClick='toggleBox("stack-trace843710487", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace843710487'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@id=&apos;ContentPlaceHolder1_btnLogin&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:32:14.902Z&apos;
 System info: host: &apos;DELL-PC&apos;, ip: &apos;192.168.1.105&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_181&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3392, moz:profile: C:\Users\dell\AppData\Local..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: f3b5ea7e-f89f-4a64-92fc-af5cd98aac40
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3508, moz:profile: C:\Users\dell\AppData\Local..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: ebe9d1a1-026d-4648-941c-41ea30eed3f6
+*** Element info: {Using=xpath, value=//input[@id=&apos;ContentPlaceHolder1_btnLogin&apos;]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -137,9 +143,11 @@ Session ID: f3b5ea7e-f89f-4a64-92fc-af5cd98aac40
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at Hebeon.QALogin.Course(QALogin.java:45)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at Screenshot.SampleTest.login(SampleTest.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -166,8 +174,8 @@ Session ID: f3b5ea7e-f89f-4a64-92fc-af5cd98aac40
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>34</td>
-<td>Hebeon.QALogin@5b275dab</td></tr>
+<td>30</td>
+<td>Screenshot.SampleTest@61832929</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -177,10 +185,10 @@ Session ID: f3b5ea7e-f89f-4a64-92fc-af5cd98aac40
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Hebeon.QALogin.Login()'><b>Login</b><br>Test class: Hebeon.QALogin</td>
+<td title='Screenshot.SampleTest.login()'><b>login</b><br>Test class: Screenshot.SampleTest<br>Parameters: hebeonstudent, Hb123!@#</td>
 <td></td>
-<td>35</td>
-<td>Hebeon.QALogin@5b275dab</td></tr>
+<td>15</td>
+<td>Screenshot.SampleTest@61832929</td></tr>
 </table><p>
 </body>
 </html>

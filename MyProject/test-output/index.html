@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\dell\AppData\Local\Temp\testng-eclipse--1751139039\testng-customsuite.xml</span>
+                    <span>C:\Users\dell\AppData\Local\Temp\testng-eclipse-1127732391\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Hebeon.QALogin" hash-for-method="Course">Course</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Screenshot.SampleTest" hash-for-method="login(shalini, medha)">login(shalini, medha)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -116,7 +116,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Hebeon.QALogin" hash-for-method="Login">Login</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Screenshot.SampleTest" hash-for-method="login(hebeonstudent, Hb123!@#)">login(hebeonstudent, Hb123!@#)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -134,20 +134,23 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">Hebeon.QALogin</span>
+              <span class="class-name">Screenshot.SampleTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Course">
-                  </a> <!-- Course -->
-                  <span class="method-name">Course</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: Element &lt;span id=&quot;btnGo&quot; class=&quot;btn btn-danger btn-go&quot;&gt; could not be scrolled into view
+                  <a name="login(shalini, medha)">
+                  </a> <!-- login(shalini, medha) -->
+                  <span class="method-name">login</span>
+                  <span class="parameters">(shalini, medha)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@id=&apos;ContentPlaceHolder1_btnLogin&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:32:14.902Z&apos;
 System info: host: &apos;DELL-PC&apos;, ip: &apos;192.168.1.105&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_181&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3392, moz:profile: C:\Users\dell\AppData\Local..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: f3b5ea7e-f89f-4a64-92fc-af5cd98aac40
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3508, moz:profile: C:\Users\dell\AppData\Local..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: ebe9d1a1-026d-4648-941c-41ea30eed3f6
+*** Element info: {Using=xpath, value=//input[@id=&apos;ContentPlaceHolder1_btnLogin&apos;]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -158,9 +161,11 @@ Session ID: f3b5ea7e-f89f-4a64-92fc-af5cd98aac40
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-	at Hebeon.QALogin.Course(QALogin.java:45)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at Screenshot.SampleTest.login(SampleTest.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -195,14 +200,15 @@ Session ID: f3b5ea7e-f89f-4a64-92fc-af5cd98aac40
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Hebeon.QALogin</span>
+              <span class="class-name">Screenshot.SampleTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Login">
-                  </a> <!-- Login -->
-                  <span class="method-name">Login</span>
+                  <a name="login(hebeonstudent, Hb123!@#)">
+                  </a> <!-- login(hebeonstudent, Hb123!@#) -->
+                  <span class="method-name">login</span>
+                  <span class="parameters">(hebeonstudent, Hb123!@#)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -210,7 +216,7 @@ Session ID: f3b5ea7e-f89f-4a64-92fc-af5cd98aac40
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\dell\AppData\Local\Temp\testng-eclipse--1751139039\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\dell\AppData\Local\Temp\testng-eclipse-1127732391\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -219,7 +225,7 @@ Session ID: f3b5ea7e-f89f-4a64-92fc-af5cd98aac40
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Hebeon.QALogin&quot;/&gt;
+      &lt;class name=&quot;Screenshot.SampleTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -261,18 +267,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Login')
-data.setCell(0, 2, 'Hebeon.QALogin')
-data.setCell(0, 3, 35825);
+data.setCell(0, 1, 'login')
+data.setCell(0, 2, 'Screenshot.SampleTest')
+data.setCell(0, 3, 30165);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Course')
-data.setCell(1, 2, 'Hebeon.QALogin')
-data.setCell(1, 3, 34422);
+data.setCell(1, 1, 'login')
+data.setCell(1, 2, 'Screenshot.SampleTest')
+data.setCell(1, 3, 15525);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 45 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -298,24 +304,24 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Hebeon.QALogin</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Screenshot.SampleTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">Login</span>
-                <span class="method-start">21267 ms</span>
+                <span class="method-name">login(hebeonstudent, Hb123!@#)</span>
+                <span class="method-start">17751 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">Course</span>
-                <span class="method-start">57104 ms</span>
+                <span class="method-name">login(shalini, medha)</span>
+                <span class="method-start">33286 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
-                <span class="method-name">afterTest</span>
-                <span class="method-start">91531 ms</span>
+                <span class="method-name">aftertest</span>
+                <span class="method-start">63458 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -2,36 +2,64 @@
 <testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="117411" started-at="2018-08-30T11:24:49Z" finished-at="2018-08-30T11:26:46Z">
+  <suite name="Default suite" duration-ms="69495" started-at="2018-08-31T10:06:59Z" finished-at="2018-08-31T10:08:08Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="117411" started-at="2018-08-30T11:24:49Z" finished-at="2018-08-30T11:26:46Z">
-      <class name="Hebeon.QALogin">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:Hebeon.QALogin@5b275dab]" name="beforeTest" is-config="true" duration-ms="21189" started-at="2018-08-30T11:24:49Z" finished-at="2018-08-30T11:25:10Z">
+    <test name="Default test" duration-ms="69495" started-at="2018-08-31T10:06:59Z" finished-at="2018-08-31T10:08:08Z">
+      <class name="Screenshot.SampleTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:Screenshot.SampleTest@61832929]" name="beforeTest" is-config="true" duration-ms="17713" started-at="2018-08-31T10:06:59Z" finished-at="2018-08-31T10:07:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="Login()[pri:1, instance:Hebeon.QALogin@5b275dab]" name="Login" duration-ms="35825" started-at="2018-08-30T11:25:10Z" finished-at="2018-08-30T11:25:46Z">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:Screenshot.SampleTest@61832929]" name="login" duration-ms="15525" started-at="2018-08-31T10:07:17Z" data-provider="hebeondata" finished-at="2018-08-31T10:07:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hebeonstudent]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Hb123!@#]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method status="FAIL" signature="Course()[pri:2, instance:Hebeon.QALogin@5b275dab]" name="Course" duration-ms="34422" started-at="2018-08-30T11:25:46Z" finished-at="2018-08-30T11:26:20Z">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
+        </test-method> <!-- login -->
+        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String)[pri:0, instance:Screenshot.SampleTest@61832929]" name="login" duration-ms="30165" started-at="2018-08-31T10:07:32Z" data-provider="hebeondata" finished-at="2018-08-31T10:08:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[shalini]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[medha]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Element <span id="btnGo" class="btn btn-danger btn-go"> could not be scrolled into view
+              <![CDATA[Unable to locate element: //input[@id='ContentPlaceHolder1_btnLogin']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:32:14.902Z'
 System info: host: 'DELL-PC', ip: '192.168.1.105', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3392, moz:profile: C:\Users\dell\AppData\Local..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: f3b5ea7e-f89f-4a64-92fc-af5cd98aac40]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3508, moz:profile: C:\Users\dell\AppData\Local..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: ebe9d1a1-026d-4648-941c-41ea30eed3f6
+*** Element info: {Using=xpath, value=//input[@id='ContentPlaceHolder1_btnLogin']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <span id="btnGo" class="btn btn-danger btn-go"> could not be scrolled into view
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@id='ContentPlaceHolder1_btnLogin']
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.13.0', revision: '2f0d292', time: '2018-06-25T15:32:14.902Z'
 System info: host: 'DELL-PC', ip: '192.168.1.105', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3392, moz:profile: C:\Users\dell\AppData\Local..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
-Session ID: f3b5ea7e-f89f-4a64-92fc-af5cd98aac40
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 61.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3508, moz:profile: C:\Users\dell\AppData\Local..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: ebe9d1a1-026d-4648-941c-41ea30eed3f6
+*** Element info: {Using=xpath, value=//input[@id='ContentPlaceHolder1_btnLogin']}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -42,9 +70,11 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
-at Hebeon.QALogin.Course(QALogin.java:45)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+at Screenshot.SampleTest.login(SampleTest.java:29)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -72,15 +102,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Course -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:Hebeon.QALogin@5b275dab]" name="afterTest" is-config="true" duration-ms="25878" started-at="2018-08-30T11:26:20Z" finished-at="2018-08-30T11:26:46Z">
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="aftertest()[pri:0, instance:Screenshot.SampleTest@61832929]" name="aftertest" is-config="true" duration-ms="6034" started-at="2018-08-31T10:08:02Z" finished-at="2018-08-31T10:08:08Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- Hebeon.QALogin -->
+        </test-method> <!-- aftertest -->
+      </class> <!-- Screenshot.SampleTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

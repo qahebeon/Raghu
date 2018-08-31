@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Hebeon.QALogin">
+      <class name="Screenshot.SampleTest">
         <methods>
+          <include name="login" invocation-numbers="1"/>
           <include name="beforeTest"/>
-          <include name="Course"/>
-          <include name="afterTest"/>
+          <include name="aftertest"/>
         </methods>
-      </class> <!-- Hebeon.QALogin -->
+      </class> <!-- Screenshot.SampleTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

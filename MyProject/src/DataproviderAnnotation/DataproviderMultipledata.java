@@ -26,6 +26,18 @@ public class DataproviderMultipledata {
 		data[1][1] = 87654321;
 		return data;
 	}
+	
+	@DataProvider
+	public Object[][] hebeondata()
+	{
+		Object[][] data = new Object[2][2];
+		data[0][0] = "hebeonstudent";
+		data[0][1] = "Hb123!@#";
+		data[1][0] = "shalini";
+		data[1][1] = "medha";
+		return data;
+		
+	}
 
 }
 
