@@ -12,7 +12,7 @@ public class ScreenshotSyntax {
 		WebDriver driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.get("https://qatesting.hebeon.com");
-		File f = (TakesScreenshot)driver).
+		//File f = (TakesScreenshot)driver).
 	}
 
 }
