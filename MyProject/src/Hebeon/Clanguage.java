@@ -16,18 +16,30 @@ import org.testng.annotations.BeforeTest;
 import DataproviderAnnotation.DataproviderMultipledata;
 
 
-public class SampleLoginTest {
+public class Clanguage {
 
 	WebDriver driver = null;
 	Properties p = null;
 
-	@Test(dataProviderClass = DataproviderMultipledata.class, dataProvider = "hebeondata")
+	@Test(priority=1, dataProviderClass = DataproviderMultipledata.class, dataProvider = "hebeondata")
 	public void login(String uname, String pwd) throws InterruptedException {
 		driver.findElement(By.xpath("//input[@id='ContentPlaceHolder1_txtUserName']")).sendKeys(uname);
 		driver.findElement(By.xpath("//input[@id='ContentPlaceHolder1_txtPassword']")).sendKeys(pwd);
 		Thread.sleep(10000);
 		driver.findElement(By.xpath("//input[@id='ContentPlaceHolder1_btnLogin']")).click();
 
+	}
+	
+	@Test(priority=2)
+	public void languageC() throws InterruptedException{
+		driver.findElement(By.xpath("//span[@title='There are 32 Chapters']")).click();
+		driver.findElement(By.xpath("//li[@id='L1-CalculatorProject']")).click();
+		Thread.sleep(20000);
+		driver.findElement(By.xpath("//li[text()='S1']")).click();
+		driver.findElement(By.xpath("//a[@id='btnPrev']")).click();
+		
+		
+		
 	}
 	
 	@BeforeTest
@@ -46,8 +58,8 @@ public class SampleLoginTest {
 	@AfterTest
 	public void aftertest(){
 		
-		driver.findElement(By.xpath("//i[@class='fa fa-user-circle-o']")).click();
-		driver.findElement(By.xpath("//a[text()='Sign Out']")).click();
+		//driver.findElement(By.xpath("//i[@class='fa fa-user-circle-o']")).click();
+		//driver.findElement(By.xpath("//a[text()='Sign Out']")).click();
 	
 		
 	}

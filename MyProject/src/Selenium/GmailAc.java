@@ -9,7 +9,7 @@ public class GmailAc {
 	public static void main(String[] args) {
 		System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"\\Drivers\\geckodriver.exe");
 		WebDriver driver = new FirefoxDriver();
-		driver.get("https://www.gmail.com");
+		driver.get("https://gmail.com");
 		driver.manage().window().maximize();
 		driver.findElement(By.xpath("//span[text()='Create account']")).click();
 		driver.findElement(By.xpath("//input[@name='firstName']")).sendKeys("siddi");

@@ -26,18 +26,18 @@ public class It_IsCourse {
 		driver.findElement(By.xpath("//input[@id='ContentPlaceHolder1_txtPassword']")).sendKeys(prop.getProperty("password"));
 		Thread.sleep(10000);
 		driver.findElement(By.xpath("//input[@id='ContentPlaceHolder1_btnLogin']")).click();
-		
+
 
 	}
-	
+
 	@Test(priority=2)
 	public void course() throws InterruptedException{
 		driver.findElement(By.xpath("//span[@title='There are 6 Chapters']")).click();
 		driver.findElement(By.xpath("//li[@id='L1-Computers']")).click();
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@value='Start Exam']")));
-		Thread.sleep(5000);
-		driver.findElement(By.xpath("//input[@value='Start Exam']")).click();
-		
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@id='btnPrev']")));
+		//Thread.sleep(10000);
+		driver.findElement(By.xpath("//a[@id='btnPrev']")).click();
+
 	}
 
 	@BeforeTest

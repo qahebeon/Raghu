@@ -12,7 +12,7 @@ public class GmailLoginLogout {
 		System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"\\Drivers\\geckodriver.exe");
 
 		WebDriver driver = new FirefoxDriver();
-		driver.get("https://www.gmail.com");
+		driver.get("https://gmail.com");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//input[@name='identifier']")).sendKeys("raghusiddi");

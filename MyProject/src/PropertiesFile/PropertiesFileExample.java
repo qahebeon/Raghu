@@ -28,7 +28,7 @@ public class PropertiesFileExample {
 	@BeforeTest
 	public void beforetest() throws FileNotFoundException, IOException{
 		p = new Properties();
-		p.load(new FileInputStream(System.getProperty("user.dir")+"/Configs/Config.properties"));
+		p.load(new FileInputStream(System.getProperty("user.dir")+"/Configs/gmail.properties"));
 		System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/Drivers/geckodriver.exe");
 		driver = new FirefoxDriver();
 		driver.get(p.getProperty("url"));

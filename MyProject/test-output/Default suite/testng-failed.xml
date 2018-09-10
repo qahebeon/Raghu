@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Screenshot.ScreenshotSyntax">
+      <class name="Selenium.SkypeLoginLogout">
         <methods>
-          <include name="captureScreen"/>
+          <include name="login"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
         </methods>
-      </class> <!-- Screenshot.ScreenshotSyntax -->
+      </class> <!-- Selenium.SkypeLoginLogout -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

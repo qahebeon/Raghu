@@ -4,8 +4,10 @@ import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
@@ -16,10 +18,16 @@ public class QALogin {
 	WebDriver driver = null;
 	WebDriverWait wait = null;
 
+	public void clickNext(){
+
+		driver.findElement(By.xpath("//a[@id='btnPrev']")).click();
+
+	}
+
 	@Test(priority=1)
 	public void Login() throws InterruptedException {
 		driver.findElement(By.xpath("//input[@id='ContentPlaceHolder1_txtUserName']")).sendKeys("hebeonstudent");
-		driver.findElement(By.xpath("//input[@id='ContentPlaceHolder1_txtPassword']")).sendKeys("Hb123!@#");
+		driver.findElement(By.xpath("//input[@id='ContentPlaceHolder1_txtPassword']")).sendKeys("Hebeon123");
 
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter Captcha : ");
@@ -37,14 +45,25 @@ public class QALogin {
 		driver.findElement(By.xpath("//li[@id='a6']")).click();
 		Thread.sleep(10000);
 		driver.findElement(By.xpath("//li//following-sibling::span[text()='109']")).click();
+		Thread.sleep(10000);
 		driver.findElement(By.xpath("//button[@id='ContentPlaceHolder1_btnProceed']")).click();
-
-		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@class='goto-NextStageLevel']")));
 		Thread.sleep(10000);
 		driver.findElement(By.xpath("//button[@class='goto-NextStageLevel']")).click();
-		driver.findElement(By.xpath("//span[@id='btnGo']")).click();
+		//Actions a=new Actions(driver);
+		//a.keyDown(Keys.CONTROL).sendKeys(Keys.END).build().perform();
+		Thread.sleep(10000);
+		driver.findElement(By.xpath("//li[@id='btnbg2']")).click();
+		clickNext();
+		clickNext();
+		//driver.findElement(By.xpath("//div[@class='pull-right']//button[@class='button_medium1']")).click();
+		clickNext();
+		clickNext();
+		clickNext();
+		clickNext();
+
 		
 
+		
 	}
 
 

@@ -30,8 +30,9 @@ public class ReadMultipleSheet_Poi {
 				for (int j = 0; j < cols; j++) {
 					String str = ws.getRow(i).getCell(j).getStringCellValue().trim();
 					System.out.print(str);
+					System.out.println("\t\t");
 
-				}System.out.println("\n");
+				}//System.out.println("\n");
 		
 			}
 		

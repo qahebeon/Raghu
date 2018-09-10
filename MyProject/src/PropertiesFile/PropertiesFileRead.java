@@ -10,7 +10,7 @@ public class PropertiesFileRead {
 	public static void main(String[] args) throws FileNotFoundException, IOException {
 
 		Properties p = new Properties();
-		p.load(new FileInputStream(System.getProperty("user.dir")+"/Configs/Config.properties"));
+		p.load(new FileInputStream(System.getProperty("user.dir")+"/Configs/gmail.properties"));
 		
 		
 		System.out.println(p.getProperty("url"));

@@ -32,10 +32,22 @@ public class DataproviderMultipledata {
 	{
 		Object[][] data = new Object[2][2];
 		data[0][0] = "hebeonstudent";
-		data[0][1] = "Hb123!@#";
+		data[0][1] = "Hebeon123";
 		data[1][0] = "shalini";
 		data[1][1] = "medha";
 		return data;
+		
+	}
+	
+	@DataProvider
+	public Object[][] skypedata()
+	{
+		Object[][] data = new Object[1][1];
+		data[0][0] = "raghavendrasiddi";
+		data[0][1] = "mother143";
+		
+		return data;
+				
 		
 	}
 
