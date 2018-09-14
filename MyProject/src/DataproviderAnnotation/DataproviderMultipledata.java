@@ -42,7 +42,7 @@ public class DataproviderMultipledata {
 	@DataProvider
 	public Object[][] skypedata()
 	{
-		Object[][] data = new Object[1][1];
+		Object[][] data = new Object[1][2];
 		data[0][0] = "raghavendrasiddi";
 		data[0][1] = "mother143";
 		

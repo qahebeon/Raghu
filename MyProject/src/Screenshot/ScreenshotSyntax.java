@@ -18,7 +18,7 @@ public class ScreenshotSyntax {
 		System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"/Drivers/geckodriver.exe");
 		WebDriver driver = new FirefoxDriver();
 		driver.manage().window().maximize();
-		driver.get("https://google.com");
+		driver.get("https://facebook.com");
 		File f = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(f, new File("C:\\Users\\dell\\Desktop\\Screenshots.png"));	
 		driver.close();
